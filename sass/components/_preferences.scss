@@ -1,0 +1,74 @@
+.preferences__list {
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+
+}
+
+.preferences__item {
+   
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 4 * 30px) / 4);
+    }
+}
+
+.icon-box {
+    max-width: 450px;
+    height: 120px;
+    margin-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30%;
+    padding-right: 30%;
+    background-color: $third-bg-color;
+    border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+        padding-left: 144px;
+        padding-right: 144px;  
+}
+
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+        padding-left: 102px;
+        padding-right: 102px; 
+    }
+}
+
+.preferences__icon {
+    width: 70px;
+    height: 70px;
+    
+}
+
+.preferences__title {
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.preferences__text {
+    color: $second-font-color;
+    font-size: 14px;
+    line-height: 1.7;
+}

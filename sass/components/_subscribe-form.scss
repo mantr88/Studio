@@ -1,0 +1,100 @@
+.subscribe {
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
+}
+
+.subscribe__text {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }    
+}
+
+.subscribe__box {
+    display: flex;
+    align-items: center;
+    
+
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+    }
+}
+
+.subscribe__label {
+    font-size: 16px;
+    line-height: 1.25; 
+    
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+    }
+}
+
+.subscribe__input {
+    width: 358px;
+    padding: 15px 16px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $secondary-bg-color;
+
+    @media screen and (max-width: 767px) {
+        width: 95vw;
+        max-width: 450px;   
+    }  
+
+    @media screen and (min-width: 768px) {
+        width: 450px;  
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: 358px;   
+    } 
+}
+
+.subscribe__button {
+    padding: 10px 31px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: $white-font-color;
+
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: transparent;
+    cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+        padding-left: 28px;
+        padding-right: 28px;
+        margin-left: 10px;
+    }
+}
+
+.subscribe__icon {
+    margin-left: 12px;
+    width: 24px;
+    height: 24px;
+    fill: $white-font-color;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 10px;
+    }
+}

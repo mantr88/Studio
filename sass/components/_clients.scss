@@ -1,0 +1,77 @@
+.clients__list {
+    display:flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    @media screen and(min-width: 768px) {
+        justify-content: center;
+    }
+}
+
+.clients__item {
+    width: calc((100% - 2 * 30px) / 2);
+    max-width: 210px;
+    margin: 15px;
+
+
+    height: 92px;
+    border: 1px solid $icon-bg-color;
+    border-radius: 4px;
+
+    transition: border 250ms $timing-function;
+    
+    &:hover,
+    &:focus {
+     border: 1px solid $main-color;
+}
+    @media screen and(min-width: 768px) {
+        width: calc((100% - 3 * 30px) / 3);
+        max-width: 226px; 
+    }
+
+    @media screen and(min-width: 1140px) {
+        width: calc((100% -  6 * 30px) / 6);
+        max-width: 170px;
+    }
+}
+
+.clients__link {
+    max-width: 210px;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and(min-width: 768px) {
+        display: block;
+        max-width: 226px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @media screen and(min-width: 1200px) {
+        display: block;
+         max-width: 170px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.clients__icon {
+    width: 106px;
+    height: 60px;
+    fill: $icon-bg-color;
+
+    transition: fill 250ms $timing-function;
+
+    .clients__item:hover &,
+    .clients__item:focus & {
+     fill: $main-color;
+}
+}
